@@ -16,7 +16,7 @@ class Api::V1::PeopleController < Api::V1::BaseController
             else
                 render json: {
                     success: false,
-                    message: "Invalid phone number format"
+                    message: "Invalid phone number format, valid format is XXX-XXX-XXXX"
                 }, status: 404 and return
             end
         end
