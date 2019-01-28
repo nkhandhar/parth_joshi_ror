@@ -1,0 +1,16 @@
+<h1>Alloted phone numbers</h1>
+
+<% if @user_contacts.present? %>
+    <% @user_contacts.each do |u| %>
+        <%= u.name %> -> <%= u.phone_number.insert(3, '-').insert(7, '-') %> <br>
+    <% end %>
+<% else %>
+    No results found
+<% end %>
+
+<p>
+Note:
+<pre>
+
+</pre>
+</p>
